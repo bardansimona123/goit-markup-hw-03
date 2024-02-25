@@ -1,0 +1,379 @@
+:root {
+--primary-color: white;
+--navy-blue: #2e2f42; 
+--second-family: "Raleway";
+--iris:#4D5AE5;
+--ocean:#404BBF;
+--cloud: #f4f4fd;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+}
+
+header {
+    display: flex;
+    border: 1px; 
+}
+
+.web {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+}
+
+.studio {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--navy-blue);
+}
+
+header ul {
+    margin-right: 268px;
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 24px;
+    gap: 30px;
+    padding-left: 0px;
+}
+
+nav li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+nav li a:hover {
+    color: var(--ocean);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+}
+ 
+.email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-right: 30px;
+}
+
+.email:hover {
+    color: var(--ocean);
+}
+
+.phone {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.phone:hover {
+    color: var(--ocean);
+}
+
+.hero-section {
+    display: flex;
+    background-color: #2E2F42;
+    justify-content: center;
+    height: 600px;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffffff;
+    width: 496px;
+    margin-bottom: 48px;
+}
+
+.hero-section button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: var(--iris);
+    width: 169px;
+    height: 56px;
+}
+
+.hero-section button:hover {
+    background: var(--ocean);
+}
+
+.section-1 h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.section-1 p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.section-2 h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--navy-blue);
+    margin-bottom: 72px;
+} 
+
+.section-2 ul {
+    gap: 8px;
+}
+
+.section-2 img {
+    width: 325px;
+    margin-bottom: 120px;
+}
+
+.section-3 {
+    background: var(--cloud);
+    height: 732px;
+}
+
+.section-3 h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--navy-blue);
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+
+.section-3 h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+}
+
+.section-3 p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+
+.section-3 ul {
+    display: flex;
+    gap: 12px;
+}
+
+.section-3 li {
+    background-color: #ffffff;
+    width: 242px;
+    height: 380px;
+}
+
+.section-3 li img {
+    width: 242px;
+}
+
+
+footer {
+    background: var(--navy-blue);
+    height: 312px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+}
+
+.studio-footer {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--cloud);
+}
+
+
+/* Portfoliu page*/
+
+.filters button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--iris);
+    background: var(--cloud);
+}
+
+.filters button:active,
+.filters button:hover {
+    background: var(--ocean);
+    color: #ffffff;
+}
+
+.button-all {
+    display: flex;
+    width: 69px;
+    height: 48px;
+    justify-content: center;
+}
+
+.all-span {
+    width: 21px;
+    height: 24px;
+    padding: 12px 24px;
+}
+
+.button-website {
+    width: 116px;
+    height: 48px;
+}
+
+.website-span {
+    display: flex;
+    width: 68px;
+    height: 24px;
+    padding: 12px 24px;
+}
+
+.button-app {
+    display: flex;
+    width: 78px;
+    height: 48px;
+}
+
+.button-design {
+    display: flex;
+    width: 101px;
+    height: 48px;
+}
+
+.button-marketing {
+    display: flex;
+    width: 126px;
+    height: 48px;
+}
+
+
+
+.main h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    font-family: "Roboto", sans-serif;
+}
+
+.main p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+/* Tema 3 */
+
+.container {
+    width: 1200px;
+    margin: 0px;
+    pading-left: 156px;
+    pading-right: 156px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px;
+    height: 24px;
+}
+
+.container-1{
+    display: flex;
+    padding: 120px 115px;
+    justify-content: space-between;
+    width: 1050px;
+}
+
+.container-2{
+    width: 1050px;
+    padding-left: 115px;
+    padding-right: 156px;
+}
+
+.container-3 {
+    width: 1050px;
+    padding-left:115px;
+    padding-right: 180px;
+}
+
+.footer-container {
+    padding-top: 100px;
+    padding-left: 153px;
+
+}
+
+/* Portfoliu page */
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+}
+
+.filters-container ul {
+   gap: 24px;
+}
