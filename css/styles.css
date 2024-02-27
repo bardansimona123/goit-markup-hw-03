@@ -13,8 +13,9 @@ body {
 }
 
 header {
-    display: flex;
-    border: 1px; 
+    display: flex; 
+    border-bottom: 1px solid #e7e9fc;
+
 }
 
 .web {
@@ -47,7 +48,7 @@ header ul {
     padding-left: 0px;
 }
 
-nav li {
+nav li a {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -55,7 +56,8 @@ nav li {
     color: var(--navy-blue);
 }
 
-nav li a:hover {
+nav li a:hover,
+nav li:active {
     color: var(--ocean);
 }
 
@@ -239,64 +241,29 @@ footer p {
 
 /* Portfoliu page*/
 
-.filters button {
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
+.button {
+    background-color: #f4f4fd;
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: #404BBF;
     text-align: center;
-    color: var(--iris);
-    background: var(--cloud);
+    display: block-inline;
+    font-size: 16px;
+    cursor: pointer;
+ 
 }
-
-.filters button:active,
-.filters button:hover {
-    background: var(--ocean);
-    color: #ffffff;
-}
-
-.button-all {
-    display: flex;
-    width: 69px;
-    height: 48px;
+.filters-button {
+    gap: 24px;
     justify-content: center;
-}
-
-.all-span {
-    width: 21px;
-    height: 24px;
-    padding: 12px 24px;
-}
-
-.button-website {
-    width: 116px;
-    height: 48px;
-}
-
-.website-span {
     display: flex;
-    width: 68px;
-    height: 24px;
-    padding: 12px 24px;
 }
 
-.button-app {
-    display: flex;
-    width: 78px;
-    height: 48px;
-}
-
-.button-design {
-    display: flex;
-    width: 101px;
-    height: 48px;
-}
-
-.button-marketing {
-    display: flex;
-    width: 126px;
-    height: 48px;
+.button:active,
+.button:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    background: #404BBF;
+    color: #ffffff;
 }
 
 
@@ -319,10 +286,11 @@ footer p {
 /* Tema 3 */
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0px;
-    pading-left: 156px;
-    pading-right: 156px;
+    justify-content: center;
+    display: flex;
+    
 }
 
 .hero-container {
@@ -338,7 +306,6 @@ footer p {
     padding-right: 156px;
     padding-top: 24px;
     padding-bottom: 24px;
-    border: 1px;
     height: 24px;
 }
 
@@ -376,4 +343,28 @@ footer p {
 
 .filters-container ul {
    gap: 24px;
+}
+
+.section {
+    padding-top: 94px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-3 {
+    padding-bottom: 94px;
+}
+
+.list-item {
+    gap: 24px;
+}
+
+.description {
+    padding: 0px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.footers {
+    padding-left: calc(50% - 40%);
 }
